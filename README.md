@@ -1,1 +1,5 @@
 # discord-websockets-connection
+
+This is a simple Discord gateway connection and handling events such as MESSAGE_CREATE, MESSAGE_UPDATE and MESSAGE_DELETE.
+
+For updated and deleted messages, i would suggest making a simple caching system to compare the deleted message's id with the id in your cache that way you can accomplish it.
