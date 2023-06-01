@@ -60,6 +60,7 @@ class WebSocketConnection:
         print("Listening messages.")
         try:
             async for message in ws:
+                # print(message) You can use this to see what is discord gateway returning and you can debug to see the content of messages.
                 data = json.loads(message)
 
                 if data['t'] == 'MESSAGE_CREATE':
